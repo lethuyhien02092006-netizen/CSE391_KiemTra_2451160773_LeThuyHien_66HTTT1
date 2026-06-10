@@ -1,12 +1,11 @@
-/* Reset css cơ bản */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #b8d6f4; /* Màu nền xám xanh nhạt như hình */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #b8d6f4; 
     color: #333;
     line-height: 1.6;
 }
@@ -31,25 +30,18 @@ body {
 }
 .header p {
     font-size: 15px;
-    color: #e0e7ff; /* Chữ trắng nhạt cho mô tả */
+    color: #e0e7ff; 
 }
 
 .card-header h2 {
     font-weight: bold;
 }
-/* Layout chia cột */
 .main-content {
     display: grid;
-    grid-template-columns: 400px 1fr; /* Cột trái nhỏ hơn cột phải */
+    grid-template-columns: 400px 1fr; 
     gap: 24px;
 }
-/* Responsive: trên điện thoại sẽ xếp chồng lên nhau */
-@media (max-width: 900px) {
-    .main-content {
-        grid-template-columns: 1fr;
-    }
-}
-/* Kiểu dáng cho các thẻ card (hộp trắng) */
+
 .card {
     background-color: white;
     border-radius: 12px;
@@ -72,7 +64,7 @@ body {
     font-size: 13px;
     color: #6b7280;
 }
-/* Kiểu dáng cho Form */
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -99,7 +91,7 @@ body {
 }
 .error-message {
     display: block;
-    color: #ef4444; /* Màu đỏ */
+    color: #ef4444;
     font-size: 13px;
     margin-top: 6px;
     font-weight: 400;
@@ -109,10 +101,9 @@ body {
     gap: 12px;
     margin-top: 24px;
 }
-/* Kiểu dáng Nút bấm */
 .btn {
     padding: 10px 15px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 450;
     border-radius: 6px;
     cursor: pointer;
@@ -124,7 +115,7 @@ body {
 .btn-primary {
     background-color: #2563eb;
     color: white;
-    flex: 2; /* Nút chính chiếm nhiều không gian hơn */
+    flex: 2; 
 }
 .btn-primary:hover {
     background-color: #1d4ed8;
@@ -138,7 +129,6 @@ body {
 .btn-secondary:hover {
     background-color: #f9fafb;
 }
-/* Kiểu dáng Bảng dữ liệu */
 .table-responsive {
     overflow-x: auto;
 }
@@ -154,8 +144,8 @@ body {
     font-size: 14px;
 }
 .product-table th {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: bold;
     color: #4b5563;
     text-transform: uppercase;
     padding-top: 8px;
@@ -170,21 +160,22 @@ body {
     font-weight: 500;
     color: #111827;
 }
-/* Nhãn Trạng thái (Badges) */
+
 .status-badge {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     padding: 4px 12px;
-    border-radius: 9999px; /* Bo tròn hoàn toàn */
+    border-radius: 9999px;
     font-size: 12px;
     font-weight: 500;
 }
+
 .status-in-stock {
-    background-color: #d1fae5; /* Xanh nhạt */
-    color: #047857; /* Xanh đậm */
+    background-color: #d1fae5;
+    color: #047857;
 }
 .status-out-of-stock {
-    background-color: #fee2e2; /* Đỏ nhạt */
-    color: #b91c1c; /* Đỏ đậm */
+    background-color: #fee2e2;
+    color: #b91c1c;
 }

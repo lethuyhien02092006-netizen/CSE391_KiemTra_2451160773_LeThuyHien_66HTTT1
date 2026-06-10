@@ -28,7 +28,6 @@ const products = [
         status: "Còn hàng"
     },
     {
-        
         id: 5,
         name: "Tai nghe Sony WH-1000XM5",
         category: "Tai nghe",
