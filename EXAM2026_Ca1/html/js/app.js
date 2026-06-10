@@ -35,7 +35,6 @@ window.onload = function() {
             price: Number(priceInput.value),
             status: statusInput.value
         };
-
         products.push(newProduct);       
         renderProducts(); 
         document.getElementById('add-product-form').reset();
