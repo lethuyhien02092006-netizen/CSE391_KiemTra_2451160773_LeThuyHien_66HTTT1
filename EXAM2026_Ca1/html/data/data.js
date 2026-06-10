@@ -29,9 +29,9 @@ const products = [
     },
     {
         id: 5,
-        name: "Tai nghe AirLine",
-        category: "Headphone",
-        price: 3500000,
+        name: "Tai nghe Sony WH-1000XM5",
+        category: "Tai nghe",
+        price: 7990000,
         status: "Còn hàng"
     }
 ];
